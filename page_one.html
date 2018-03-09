@@ -12,10 +12,16 @@
           color: white;
           padding: 15px;
         }
-        .column img {
-          float: right;
+        .column {
+          float: left;
+          padding: 15px;
         }
+        
         .column img {
+        	float: right;
+            }
+        
+        .clearfix::after {
           content: "";
           clear: both;
           display: table;
@@ -24,7 +30,8 @@
           width: 20%;
         }
         .content {
-          width: 70%;
+          width: 80%;
+          float: right;
         }
         .menu ul {
           list-style-type: none;
@@ -41,6 +48,10 @@
           background-color: #0099cc;
         }
         
+        .more {
+	  float: right;	
+	}
+        
     </style>
 </head>
 <body>
@@ -48,6 +59,7 @@
   <div class="header">
     <h1>Enver Creek Secondary</h1>
   </div>
+  
   <div class="clearfix">
     <div class="column menu">
       <ul>
@@ -58,17 +70,24 @@
     </div>
     
     <div class="column content">
-      <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images114.jpg">
+      <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
       <h1>Welcome</h1>
       <p>Enver Creek Secondary is located in the heart of Surrey, British Columbia.</p>
       <p>Students who come to Enver Creek Secondary can expect high academic expectations and a focus on community.</p>
     </div>
     
      <div class="column content more">
-      <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images114.jpg">
-      <h1>Welcome</h1>
-      <p>Enver Creek Secondary is located in the heart of Surrey, British Columbia.</p>
-      <p>Students who come to Enver Creek Secondary can expect high academic expectations and a focus on community.</p>
+      <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
+      <h1>Second Content</h1>
+      <p>You can use his as another space to write content for your website.</p>
+      <p>Anymore content you write, you wont need to add any div classes, just copy and paste the column content more and you're set.</p>
+    </div>
+    
+       <div class="column content more">
+      <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
+      <h1>Third Content</h1>
+      <p>You can use his as another space to write content for your website.</p>
+      <p>Anymore content you write, you wont need to add any div classes, just copy and paste the column content more and you're set.</p>
     </div>
   </div>
     
